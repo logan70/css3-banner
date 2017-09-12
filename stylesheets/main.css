@@ -55,7 +55,6 @@ nav a:not(.active):hover{
     margin: 30px auto;
     position: relative;
     border: 20px solid #ccc;
-    background-color: green;
 }
 
 input{
@@ -88,4 +87,13 @@ label:before{
     transform: translate(-50%);
     z-index: -1;
     box-shadow: 0 0 0 4px rgba(255, 255, 255, .3)
+}
+
+input:checked + label{
+    color: #68abc2;
+}
+
+input:checked + label:before{
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(104, 171, 194, .6)
 }
