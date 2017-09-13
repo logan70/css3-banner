@@ -5,7 +5,7 @@ body {
     font-weight: 400;
     min-width: 1200px;
     color: #3a2127;
-    background: url('../images/bg.jpg') 0 0 no-repeat;
+    background: url('https://raw.githubusercontent.com/logan70/css3-banner/master/images/bg.jpg') 0 0 no-repeat;
     background-size: 100%;
 }
 
@@ -137,22 +137,22 @@ label:not(:last-of-type):after {
 
 .img-slice:first-of-type,
 #slide-1:checked ~ .banner-slide{
-    background: url('../images/1a.jpg') no-repeat;
+    background: url('https://raw.githubusercontent.com/logan70/css3-banner/master/images/1a.jpg') no-repeat;
 }
 
 .img-slice:nth-of-type(2),
 #slide-2:checked ~ .banner-slide{
-    background: url('../images/2a.jpg') no-repeat;
+    background: url('https://raw.githubusercontent.com/logan70/css3-banner/master/images/2a.jpg') no-repeat;
 }
 
 .img-slice:nth-of-type(3),
 #slide-3:checked ~ .banner-slide{
-    background: url('../images/3a.jpg') no-repeat;
+    background: url('https://raw.githubusercontent.com/logan70/css3-banner/master/images/3a.jpg') no-repeat;
 }
 
 .img-slice:last-of-type,
 #slide-4:checked ~ .banner-slide{
-    background: url('../images/4a.jpg') no-repeat;
+    background: url('https://raw.githubusercontent.com/logan70/css3-banner/master/images/4a.jpg') no-repeat;
 
 }
 
