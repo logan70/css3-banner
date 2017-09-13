@@ -1,0 +1,51 @@
+.img-slice{
+    width: 140px;
+    height: 300px;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    opacity: 0;
+	transform: scale(2);
+    transition: opacity 1s,transform 1s;
+}
+
+@keyframes slideOut{
+	from {
+    	opacity: 1;
+		transform: scale(1);
+	}
+	to {
+    	opacity: 0;
+		transform: scale(2);
+	}
+}
+
+@-webkit-keyframes slideOut{
+	from {
+    	opacity: 1;
+		transform: scale(1);
+	}
+	to {
+    	opacity: 0;
+		transform: scale(2);
+	}
+}
+
+.slide:checked ~ .banner-slide .img-slice{
+	-webkit-animation: slideOut 1s;
+	animation: slideOut 1s;
+}
+
+#slide-1:checked ~ .banner-slide .img-slice:first-of-type,
+#slide-2:checked ~ .banner-slide .img-slice:nth-of-type(2),
+#slide-3:checked ~ .banner-slide .img-slice:nth-of-type(3),
+#slide-4:checked ~ .banner-slide .img-slice:last-of-type
+{
+	z-index: 10;
+	opacity: 1;
+	transform: scale(1);
+	-webkit-animation: none;
+	-o-animation: none;
+	animation: none;
+}

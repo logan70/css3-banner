@@ -1,0 +1,44 @@
+.img-slice{
+    width: 140px;
+    height: 300px;
+    overflow: hidden;
+    position: absolute;
+    left: -140px;
+    top: 0;
+    transition: left 1s;
+}
+
+@keyframes slideOut{
+	from {
+		left: 0;
+	}
+	to {
+		left: 140px;
+	}
+}
+
+@-webkit-keyframes slideOut{
+	from {
+		left: 0;
+	}
+	to {
+		left: 140px;
+	}
+}
+
+.slide:checked ~ .banner-slide .img-slice{
+	-webkit-animation: slideOut 1s;
+	animation: slideOut 1s;
+}
+
+#slide-1:checked ~ .banner-slide .img-slice:first-of-type,
+#slide-2:checked ~ .banner-slide .img-slice:nth-of-type(2),
+#slide-3:checked ~ .banner-slide .img-slice:nth-of-type(3),
+#slide-4:checked ~ .banner-slide .img-slice:last-of-type
+{
+	z-index: 2;
+	left: 0;
+	-webkit-animation: none;
+	-o-animation: none;
+	animation: none;
+}
